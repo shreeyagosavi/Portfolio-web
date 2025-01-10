@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+*::selection{
+    color: #fff;
+    background-color: #9e807a;
+}
+img{
+    width: 100%;
+}
+.top-header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #220404;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 1000;
+    padding-left: 40px;
+}
+/* .logo{
+    display: flex;
+    align-items: center;
+} */
+.logo img{
+    width: 90px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li a{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    color: #efcaad;
+}
+div .menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.navbar li{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.home {
+    width: 100%;
+    padding: 100px 20px; 
+    position: relative;
+    background: url("assets/imgs/hero.jpg") no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: left;
+
+    align-items: center;
+    text-align: center; 
+    /* opacity: 0.5; */
+}
+.hero-area-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding-left: 40px;
+}
+/* .hero-area-text {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+} */
+.button{
+    padding: 20px;
+    background: #4f1a1a;
+    /* margin-top: 14px; */
+    color: #fff;
+    border-radius: 30px;
+    /* margin: 30px;*/
+    font-weight: 600;
+    font-size: 18px;
+}
+.button:hover{
+    color: #4f1a1a;
+    background-color: #fff;
+}
+.hero-area-text h1{
+    background-color: rgb(79 26 26);
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.hero-area-text h2{
+    margin-bottom: 30px;
+}
+.about{
+    padding: 50px 100px;
+    background-color: #e8d6bf;
+}
+.about .about-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about .about-section .about-img{
+    height: auto;
+    width: 100%;
+}
+.about-heading {
+    /* padding: 30px 0; */
+    text-align: center;
+    font-size: 35px;
+}
+.about-heading span{
+    color: #905a39;
+}
+.about-content{
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.about .about-content .about-text{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.food-heading{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.food-heading span{
+    color: #905a39;
+}
+.best-sellers .food-box{
+padding: 20px;
+background: antiquewhite;
+border-radius: 20px;
+height: 450px;
+}
+.food-img img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    justify-items: center;
+    padding: 0 30px;
+}
+.food-content h3:hover{
+    color: #905a39;
+}
+.food-content h5{
+    margin: 5px 0;
+    font-weight:400 ;
+}
+.food-price:hover{
+    font-weight: 700;
+}
+.best-sellers{
+    margin: 30px;
+}
+.services{
+    background-color: #efcaad36;
+}
+.services-heading h1{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 35px;
+}
+.services-heading span{
+    color: #905a39;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 0 30px;
+}
+.services-box{
+    padding: 20px;
+    border-radius: 20px;
+}
+.services-box img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+.services-content{
+    margin: 5px 0;
+    font-weight: 400;
+}
+.services-content h3{
+    color: #915231;
+    padding: 5px 0;
+}
+.services-content h5{
+    font-weight: 400;
+    font-size: 13px;
+}
+.contact-heading h1{
+    /* padding-bottom: 30px; */
+    text-align: center;
+    font-size: 35px;
+}
+.contact-heading span{
+    color: #905a39;
+}
+.contact{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-section{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+.form,
+.contact-details {
+    flex: 1;
+}
+
+.form h2,
+.contact-details h2 {
+    margin-bottom: 20px;
+    color: #905a39;
+}
+
+.contact-form .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form .form-field input,
+.contact-form .form-field select,
+.contact-form .form-field textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #905a39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #7b625d;
+}
+
+.contact-details p,
+.contact-details ul {
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-details ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.social-links a i {
+    text-decoration: none;
+    color: #905a39;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #220404;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
